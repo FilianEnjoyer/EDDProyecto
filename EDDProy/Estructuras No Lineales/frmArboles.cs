@@ -38,7 +38,6 @@ namespace EDDemo.Estructuras_No_Lineales
 
             //Obtenemos el nodo Raiz del arbol
             miRaiz = miArbol.RegresaRaiz();
-
             //Limpiamos la cadena donde se concatenan los nodos del arbol 
             miArbol.strArbol = "";
 
@@ -163,7 +162,7 @@ namespace EDDemo.Estructuras_No_Lineales
                 miRaiz = miArbol.RegresaRaiz();
 
                 //Se inserta el nodo con el dato capturado
-                miArbol.InsertaNodo(Dato, ref miRaiz);
+                miArbol.InsertaNodoAleatorio(Dato, ref miRaiz);
             }
 
             //Leer arbol completo y mostrarlo en caja de texto
@@ -173,5 +172,11 @@ namespace EDDemo.Estructuras_No_Lineales
             txtDato.Text = "";
         }
 
+        private void btBuscarNodo_Click(object sender, EventArgs e)
+        {
+            //Obtenemos el nodo Raiz del arbol
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.BuscarNodo(int.Parse(txtDato.Text));
+        }
     }
 }
