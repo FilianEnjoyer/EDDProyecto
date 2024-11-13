@@ -9,6 +9,6 @@ namespace EDDemo
     public class Nodo
     {
         public String Dato;
-        public Nodo sig;
+        public Nodo Sig;
     }
 }

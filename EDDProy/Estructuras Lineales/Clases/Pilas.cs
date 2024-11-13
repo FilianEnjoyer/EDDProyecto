@@ -11,7 +11,7 @@ namespace EDDemo
         public void Push()
         {
             Nodo Nuevo = new Nodo();
-            Nuevo.sig = null;
+            Nuevo.Sig = null;
 
         }
     }

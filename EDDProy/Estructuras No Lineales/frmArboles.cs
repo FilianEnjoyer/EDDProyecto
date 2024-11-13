@@ -50,20 +50,76 @@ namespace EDDemo.Estructuras_No_Lineales
             txtArbol.Text = miArbol.strArbol;
             
             txtDato.Text = "";
+            // Llama a los métodos de tu árbol y actualiza las etiquetas
+            int altura = miArbol.altura(miRaiz);
+            int contarHojas = miArbol.contarHojas(miRaiz);
+            int contarNodos = miArbol.contarNodos(miRaiz);
 
- 
+            // Actualiza las etiquetas con los resultados
+            lblAltura.Text = "Altura: " + altura;
+            lblHojas.Text = "Hojas: " + contarHojas;
+            lblNodos.Text = "Nodos: " + contarNodos;
+            
+            bool Com = miArbol.esCompleto(miRaiz);
+            if (Com == true)
+            {
+                lblCompleto.Text = "Completo: Verdadero";
+            }
+            else
+            {
+                lblCompleto.Text = "Completo: Falso";
+            }
+            bool llen = miArbol.esLleno(miRaiz);
+            if (llen == true)
+            {
+                lblLleno.Text = "Lleno: Verdadero";
+            }
+            else
+            {
+                lblLleno.Text = "Lleno: Falso";
+            }
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            miArbol = null;
-            miRaiz = null;
+            if (miArbol != null)
+            {
+                // Llama al método para podar el árbol
+                miArbol.podaArbol();
+            }
+
+            // Reinicia el árbol, creando una nueva instancia después de podarlo
             miArbol = new ArbolBusqueda();
-            txtArbol.Text  = "";
+
+            // Limpia los elementos de la interfaz
+            txtArbol.Text = "";
             txtDato.Text = "";
             lblRecorridoPreOrden.Text = "";
             lblRecorridoInOrden.Text = "";
             lblRecorridoPostOrden.Text = "";
+            lblRecorridoPorNivel.Text = "";
+            // Actualiza las etiquetas con los resultados
+            lblAltura.Text = "Altura: ";
+            lblHojas.Text = "Hojas: ";
+            lblNodos.Text = "Nodos: ";
+            bool Com = miArbol.esCompleto(miRaiz);
+            if (Com == true)
+            {
+                lblCompleto.Text = "Completo: Verdadero";
+            }
+            else
+            {
+                lblCompleto.Text = "Completo: Falso";
+            }
+            bool llen = miArbol.esLleno(miRaiz);
+            if (llen == true)
+            {
+                lblLleno.Text = "Lleno: Verdadero";
+            }
+            else
+            {
+                lblLleno.Text = "Lleno: Falso";
+            }
         }
 
         private void btnGrafica_Click(object sender, EventArgs e)
@@ -140,13 +196,41 @@ namespace EDDemo.Estructuras_No_Lineales
             lblRecorridoPostOrden.Text = ""; 
             miArbol.PostOrden(miRaiz);
             lblRecorridoPostOrden.Text = miArbol.strRecorrido;
+
+
+            //Recorrido en PostOrden
+            //Obtenemos el nodo Raiz del arbol
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.strRecorrido = "";
+
+            if (miRaiz == null)
+            {
+                lblRecorridoPorNivel.Text = "El arbol esta vacio";
+                return;
+            }
+            lblRecorridoPorNivel.Text = "";
+            miArbol.RecorridoPorNiveles(miRaiz);
+            lblRecorridoPorNivel.Text = miArbol.strRecorrido;
         }
 
         private void btnCrearArbol_Click(object sender, EventArgs e)
         {
-            //Limpiamos los objetos y clases del anterior arbol
-            miArbol = null;
-            miRaiz = null;
+            if (miArbol != null)
+            {
+                // Llama al método para limpiar el árbol anterior
+                miArbol.limpiaArbol();
+            }
+
+            // Reinicia el árbol, creando una nueva instancia después de podarlo
+            miArbol = new ArbolBusqueda();
+
+            // Limpia los elementos de la interfaz
+            txtArbol.Text = "";
+            txtDato.Text = "";
+            lblRecorridoPreOrden.Text = "";
+            lblRecorridoInOrden.Text = "";
+            lblRecorridoPostOrden.Text = "";
+            lblRecorridoPorNivel.Text = "";
             miArbol = new ArbolBusqueda();
             txtArbol.Text = "";
             txtDato.Text = "";
@@ -170,6 +254,33 @@ namespace EDDemo.Estructuras_No_Lineales
             txtArbol.Text = miArbol.strArbol;
 
             txtDato.Text = "";
+            // Llama a los métodos de tu árbol y actualiza las etiquetas
+            int altura = miArbol.altura(miRaiz);
+            int contarHojas = miArbol.contarHojas(miRaiz);
+            int contarNodos = miArbol.contarNodos(miRaiz);
+
+            // Actualiza las etiquetas con los resultados
+            lblAltura.Text = "Altura: " + altura;
+            lblHojas.Text = "Hojas: " + contarHojas;
+            lblNodos.Text = "Nodos: " + contarNodos;
+            bool Com = miArbol.esCompleto(miRaiz);
+            if (Com == true)
+            {
+                lblCompleto.Text = "Completo: Verdadero";
+            }
+            else
+            {
+                lblCompleto.Text = "Completo: Falso";
+            }
+            bool llen = miArbol.esLleno(miRaiz);
+            if (llen == true)
+            {
+                lblLleno.Text = "Lleno: Verdadero";
+            }
+            else
+            {
+                lblLleno.Text = "Lleno: Falso";
+            }
         }
 
         private void btBuscarNodo_Click(object sender, EventArgs e)
@@ -177,6 +288,90 @@ namespace EDDemo.Estructuras_No_Lineales
             //Obtenemos el nodo Raiz del arbol
             miRaiz = miArbol.RegresaRaiz();
             miArbol.BuscarNodo(int.Parse(txtDato.Text));
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void BtEliminarPre_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.EliminarPredecesor(int.Parse(txtDato.Text), ref miRaiz);
+            txtArbol.Clear();
+            txtDato.Clear();
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+            // Llama a los métodos de tu árbol y actualiza las etiquetas
+            int altura = miArbol.altura(miRaiz);
+            int contarHojas = miArbol.contarHojas(miRaiz);
+            int contarNodos = miArbol.contarNodos(miRaiz);
+
+            // Actualiza las etiquetas con los resultados
+            lblAltura.Text = "Altura: " + altura;
+            lblHojas.Text = "Hojas: " + contarHojas;
+            lblNodos.Text = "Nodos: " + contarNodos;
+            bool Com = miArbol.esCompleto(miRaiz);
+            if (Com == true)
+            {
+                lblCompleto.Text = "Completo: Verdadero";
+            }
+            else
+            {
+                lblCompleto.Text = "Completo: Falso";
+            }
+            bool llen = miArbol.esLleno(miRaiz);
+            if (llen == true)
+            {
+                lblLleno.Text = "Lleno: Verdadero";
+            }
+            else
+            {
+                lblLleno.Text = "Lleno: Falso";
+            }
+        }
+
+        private void BtEliminarSuce_Click(object sender, EventArgs e)
+        {
+            miRaiz = miArbol.RegresaRaiz();
+            miArbol.EliminarSucesor(int.Parse(txtDato.Text), ref miRaiz);
+            txtArbol.Clear();
+            txtDato.Clear();
+            miArbol.MuestraArbolAcostado(1, miRaiz);
+            txtArbol.Text = miArbol.strArbol;
+            // Llama a los métodos de tu árbol y actualiza las etiquetas
+            int altura = miArbol.altura(miRaiz);
+            int contarHojas = miArbol.contarHojas(miRaiz);
+            int contarNodos = miArbol.contarNodos(miRaiz);
+
+            // Actualiza las etiquetas con los resultados
+            lblAltura.Text = "Altura: " + altura;
+            lblHojas.Text = "Hojas: " + contarHojas;
+            lblNodos.Text = "Nodos: " + contarNodos;
+            bool Com = miArbol.esCompleto(miRaiz);
+            if (Com == true)
+            {
+                lblCompleto.Text = "Completo: Verdadero";
+            }
+            else
+            {
+                lblCompleto.Text = "Completo: Falso";
+            }
+            bool llen = miArbol.esLleno(miRaiz);
+            if (llen == true)
+            {
+                lblLleno.Text = "Lleno: Verdadero";
+            }
+            else
+            {
+                lblLleno.Text = "Lleno: Falso";
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
