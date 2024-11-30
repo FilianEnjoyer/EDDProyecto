@@ -8,11 +8,6 @@ namespace EDDemo
 {
     public class Pilas
     {
-        public void Push()
-        {
-            Nodo Nuevo = new Nodo();
-            Nuevo.Sig = null;
-
-        }
+        
     }
 }

@@ -8,12 +8,6 @@ namespace EDDemo
 {
     class Listas
     {
-        public void Insertar()
-        {
-            Nodo Nuevo = new Nodo();
-            Nuevo.Sig = null;
-
-
-        }
+        
     }
 }
