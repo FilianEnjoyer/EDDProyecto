@@ -7,109 +7,107 @@ using System.Threading.Tasks;
 
 namespace EDDemo.Estructuras_Lineales.Clases
 {
-    public class Cola<T>
+    public class Cola
     {
-        private NodoCola<T> first;
-        private NodoCola<T> last;
+
+        public Nodo first;
+        public Nodo last;
+
         public Cola()
         {
             first = null;
             last = null;
         }
-        public void Queue(T Dato)
+
+        // Método para encolar (Queue)
+        public int Queue(string dato)
         {
-            NodoCola<T> nuevo = new NodoCola<T>(Dato);
+            int operaciones = 0;
+            Nodo nuevo = new Nodo(dato);
+            operaciones++;
+
             if (last == null)
             {
                 last = nuevo;
                 first = nuevo;
+                operaciones += 2;
             }
             else
             {
                 last.Sig = nuevo;
-                last = nuevo; // Actualizar el puntero last
+                last = nuevo;
+                operaciones += 2;
             }
+            return operaciones;
         }
-        
 
-        public T Dequeue()
+        // Método para desencolar (Dequeue)
+        public (string, int) Dequeue()
         {
+            int operaciones = 0;
             if (first == null)
             {
-                throw new InvalidOperationException("La cola está vacía.");
+                operaciones++;
+                return ("Cola vacía", operaciones);
             }
             else
             {
-                NodoCola<T> temp = first;
-                first = temp.Sig;
-                T Dato = temp.Dato;
-                temp = null;
-                return Dato;
+                Nodo temp = first;
+                first = first.Sig;
+                string dato = temp.Dato;
+                operaciones += 2;
+
+                if (first == null)
+                {
+                    last = null;
+                    operaciones++;
+                }
+                return (dato, operaciones);
             }
         }
 
-        public void Buscar(T valor)
+        // Método para buscar un elemento en la cola
+        public (int, int) Buscar(string valor)
         {
-            if (first == null)
-            {
-                throw new InvalidOperationException("La cola está vacía.");
-            }
-            else
-            {
-                int pos = 1;
-                NodoCola<T> actual = first;
+            int operaciones = 0;
+            if (first == null) return (-1, operaciones);
 
-                // Para comparar dos objetos de tipo T, usamos Equals en lugar de '=='
-                while (actual != null && !actual.Dato.Equals(valor))
-                {
-                    actual = actual.Sig;
-                    pos++;
-                }
+            Nodo actual = first;
+            int pos = 1;
+            operaciones++;
 
-                if (actual == null)
+            while (actual != null)
+            {
+                operaciones++;
+                if (actual.Dato == valor)
                 {
-                    Console.WriteLine("El dato {0} no se encuentra en la lista", valor);
+                    return (pos, operaciones);
                 }
-                else
-                {
-                    Console.WriteLine("El dato {0} se encuentra en la posición {1}", valor, pos);
-                }
+                actual = actual.Sig;
+                pos++;
             }
+            return (-1, operaciones); // No encontrado
         }
 
-        public void Recorrer()
+        // Método para recorrer la cola
+        public (string, int) Recorrer()
         {
-            if (first == null)
-            {
-                Console.WriteLine("La lista está vacía");
-            }
-            else
-            {
-                NodoCola<T> actual = first;
-                while (actual != null)
-                {
-                    Console.WriteLine("{0}", actual.Dato);
-                    actual = actual.Sig;
-                }
-                Console.WriteLine("Null");
-            }
-        }
-        public int Contar()
-        {
-            if (first == null) return 0;
-            else
-            {
-                NodoCola<T> actual = first;
-                int contador = 0;
+            int operaciones = 0;
+            if (first == null) return ("Cola vacía", operaciones);
 
-                while (actual != null)
-                {
-                    actual = actual.Sig;
-                    contador++;
-                }
+            Nodo actual = first;
+            string resultado = "";
+            operaciones++;
 
-                return contador;
+            while (actual != null)
+            {
+                resultado += actual.Dato + " -> ";
+                actual = actual.Sig;
+                operaciones++;
             }
+            resultado += "Null";
+            return (resultado, operaciones);
         }
+
     }
 }
