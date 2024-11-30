@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace EDDemo.Estructuras_Lineales.Clases
 {
@@ -18,7 +19,10 @@ namespace EDDemo.Estructuras_Lineales.Clases
             first = null;
             last = null;
         }
-
+        public bool estaVacio()
+        {
+            return first == null;
+        }
         // Método para encolar (Queue)
         public int Queue(string dato)
         {
@@ -108,6 +112,21 @@ namespace EDDemo.Estructuras_Lineales.Clases
             resultado += "Null";
             return (resultado, operaciones);
         }
+        public void Vaciar()
+        {
+            if (estaVacio())
+            {
+                MessageBox.Show("La cola ya está vacía");
+                return;
+            }
 
+            // Mientras haya nodos, dequeue a cada uno
+            while (!estaVacio())
+            {
+                Dequeue();
+            }
+
+            MessageBox.Show("La cola ha sido vaciada");
+        }
     }
 }
