@@ -39,6 +39,7 @@ namespace EDDemo
             this.listaSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaDobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listaCircularToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaCircularDobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +86,8 @@ namespace EDDemo
             this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.listaSimpleToolStripMenuItem,
             this.listaDobleToolStripMenuItem,
-            this.listaCircularToolStripMenuItem});
+            this.listaCircularToolStripMenuItem,
+            this.listaCircularDobleToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
             this.listasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasToolStripMenuItem.Text = "Listas";
@@ -126,6 +128,13 @@ namespace EDDemo
             this.listaCircularToolStripMenuItem.Text = "Lista Circular";
             this.listaCircularToolStripMenuItem.Click += new System.EventHandler(this.listaCircularToolStripMenuItem_Click);
             // 
+            // listaCircularDobleToolStripMenuItem
+            // 
+            this.listaCircularDobleToolStripMenuItem.Name = "listaCircularDobleToolStripMenuItem";
+            this.listaCircularDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaCircularDobleToolStripMenuItem.Text = "Lista Circular Doble";
+            this.listaCircularDobleToolStripMenuItem.Click += new System.EventHandler(this.listaCircularDobleToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,6 +165,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaDobleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listaCircularToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaCircularDobleToolStripMenuItem;
     }
 }
 
