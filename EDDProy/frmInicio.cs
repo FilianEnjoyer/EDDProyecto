@@ -54,5 +54,12 @@ namespace EDDemo
             mCola.MdiParent = this;
             mCola.Show();
         }
+
+        private void listaSimpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmListasSimples mListaS = new FrmListasSimples();
+            mListaS.MdiParent = this;
+            mListaS.Show();
+        }
     }
 }

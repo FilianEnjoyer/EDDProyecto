@@ -36,6 +36,7 @@ namespace EDDemo
             this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estructurasNoLibealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,8 @@ namespace EDDemo
             // 
             // listasToolStripMenuItem
             // 
+            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listaSimpleToolStripMenuItem});
             this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
             this.listasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listasToolStripMenuItem.Text = "Listas";
@@ -97,6 +100,13 @@ namespace EDDemo
             this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
+            // 
+            // listaSimpleToolStripMenuItem
+            // 
+            this.listaSimpleToolStripMenuItem.Name = "listaSimpleToolStripMenuItem";
+            this.listaSimpleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaSimpleToolStripMenuItem.Text = "Lista Simple";
+            this.listaSimpleToolStripMenuItem.Click += new System.EventHandler(this.listaSimpleToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -125,6 +135,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estructurasNoLibealesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arbolesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listaSimpleToolStripMenuItem;
     }
 }
 
