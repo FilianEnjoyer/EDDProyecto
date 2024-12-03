@@ -118,5 +118,12 @@ namespace EDDemo
             mTorresDeHnaoi.MdiParent = this;
             mTorresDeHnaoi.Show();
         }
+
+        private void busquedaBinariaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaBinaria mBusquedaBinaira = new FrmBusquedaBinaria();
+            mBusquedaBinaira.MdiParent = this;
+            mBusquedaBinaira.Show();
+        }
     }
 }

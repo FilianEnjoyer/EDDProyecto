@@ -46,6 +46,7 @@ namespace EDDemo
             this.potenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumarArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.torresDeHanoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaBinariaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,7 +150,8 @@ namespace EDDemo
             this.fibonacciToolStripMenuItem,
             this.potenciaToolStripMenuItem,
             this.sumarArregloToolStripMenuItem,
-            this.torresDeHanoiToolStripMenuItem});
+            this.torresDeHanoiToolStripMenuItem,
+            this.busquedaBinariaToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
@@ -189,6 +191,13 @@ namespace EDDemo
             this.torresDeHanoiToolStripMenuItem.Text = "Torres de Hanoi";
             this.torresDeHanoiToolStripMenuItem.Click += new System.EventHandler(this.torresDeHanoiToolStripMenuItem_Click);
             // 
+            // busquedaBinariaToolStripMenuItem
+            // 
+            this.busquedaBinariaToolStripMenuItem.Name = "busquedaBinariaToolStripMenuItem";
+            this.busquedaBinariaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.busquedaBinariaToolStripMenuItem.Text = "Busqueda Binaria";
+            this.busquedaBinariaToolStripMenuItem.Click += new System.EventHandler(this.busquedaBinariaToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,6 +235,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem potenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sumarArregloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem torresDeHanoiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem busquedaBinariaToolStripMenuItem;
     }
 }
 

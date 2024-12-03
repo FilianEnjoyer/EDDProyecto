@@ -142,11 +142,18 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursividad\Clases\BusquedaBinaria.cs" />
     <Compile Include="Recursividad\Clases\Factorial.cs" />
     <Compile Include="Recursividad\Clases\Fibonacci.cs" />
     <Compile Include="Recursividad\Clases\Potencia.cs" />
     <Compile Include="Recursividad\Clases\SumarArreglo.cs" />
     <Compile Include="Recursividad\Clases\TorresDeHanoi.cs" />
+    <Compile Include="Recursividad\FrmBusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FrmBusquedaBinaria.Designer.cs">
+      <DependentUpon>FrmBusquedaBinaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Recursividad\FrmFactorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +221,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Recursividad\FrmBusquedaBinaria.resx">
+      <DependentUpon>FrmBusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recursividad\FrmFactorial.resx">
       <DependentUpon>FrmFactorial.cs</DependentUpon>
     </EmbeddedResource>
