@@ -45,6 +45,7 @@ namespace EDDemo
             this.fibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.potenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sumarArregloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.torresDeHanoiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,7 +148,8 @@ namespace EDDemo
             this.factorialToolStripMenuItem,
             this.fibonacciToolStripMenuItem,
             this.potenciaToolStripMenuItem,
-            this.sumarArregloToolStripMenuItem});
+            this.sumarArregloToolStripMenuItem,
+            this.torresDeHanoiToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
@@ -179,6 +181,13 @@ namespace EDDemo
             this.sumarArregloToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sumarArregloToolStripMenuItem.Text = "Sumar Arreglo";
             this.sumarArregloToolStripMenuItem.Click += new System.EventHandler(this.sumarArregloToolStripMenuItem_Click);
+            // 
+            // torresDeHanoiToolStripMenuItem
+            // 
+            this.torresDeHanoiToolStripMenuItem.Name = "torresDeHanoiToolStripMenuItem";
+            this.torresDeHanoiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.torresDeHanoiToolStripMenuItem.Text = "Torres de Hanoi";
+            this.torresDeHanoiToolStripMenuItem.Click += new System.EventHandler(this.torresDeHanoiToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -216,6 +225,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem fibonacciToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem potenciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sumarArregloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem torresDeHanoiToolStripMenuItem;
     }
 }
 

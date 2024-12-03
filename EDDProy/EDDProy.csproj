@@ -146,6 +146,7 @@
     <Compile Include="Recursividad\Clases\Fibonacci.cs" />
     <Compile Include="Recursividad\Clases\Potencia.cs" />
     <Compile Include="Recursividad\Clases\SumarArreglo.cs" />
+    <Compile Include="Recursividad\Clases\TorresDeHanoi.cs" />
     <Compile Include="Recursividad\FrmFactorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +170,12 @@
     </Compile>
     <Compile Include="Recursividad\FrmSumarArreglos.Designer.cs">
       <DependentUpon>FrmSumarArreglos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\FrmTorresDeHanoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FrmTorresDeHanoi.Designer.cs">
+      <DependentUpon>FrmTorresDeHanoi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Estructuras Lineales\FrmCola.resx">
       <DependentUpon>FrmCola.cs</DependentUpon>
@@ -218,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Recursividad\FrmSumarArreglos.resx">
       <DependentUpon>FrmSumarArreglos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\FrmTorresDeHanoi.resx">
+      <DependentUpon>FrmTorresDeHanoi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="external\config6">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

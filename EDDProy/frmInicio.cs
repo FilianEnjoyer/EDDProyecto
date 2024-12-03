@@ -111,5 +111,12 @@ namespace EDDemo
             mSumarArreglos.MdiParent = this;
             mSumarArreglos.Show();
         }
+
+        private void torresDeHanoiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTorresDeHanoi mTorresDeHnaoi = new FrmTorresDeHanoi();
+            mTorresDeHnaoi.MdiParent = this;
+            mTorresDeHnaoi.Show();
+        }
     }
 }
