@@ -104,5 +104,12 @@ namespace EDDemo
             mPotencia.MdiParent = this;
             mPotencia.Show();
         }
+
+        private void sumarArregloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSumarArreglos mSumarArreglos = new FrmSumarArreglos();
+            mSumarArreglos.MdiParent = this;
+            mSumarArreglos.Show();
+        }
     }
 }
