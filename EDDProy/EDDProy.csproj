@@ -143,11 +143,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursividad\Clases\Factorial.cs" />
+    <Compile Include="Recursividad\Clases\Fibonacci.cs" />
     <Compile Include="Recursividad\FrmFactorial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Recursividad\FrmFactorial.Designer.cs">
       <DependentUpon>FrmFactorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recursividad\FrmFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursividad\FrmFibonacci.Designer.cs">
+      <DependentUpon>FrmFibonacci.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Estructuras Lineales\FrmCola.resx">
       <DependentUpon>FrmCola.cs</DependentUpon>
@@ -188,6 +195,9 @@
     </Compile>
     <EmbeddedResource Include="Recursividad\FrmFactorial.resx">
       <DependentUpon>FrmFactorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursividad\FrmFibonacci.resx">
+      <DependentUpon>FrmFibonacci.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="external\config6">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

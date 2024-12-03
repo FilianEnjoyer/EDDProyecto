@@ -42,6 +42,7 @@ namespace EDDemo
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recursividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,7 +142,8 @@ namespace EDDemo
             // recursividadToolStripMenuItem
             // 
             this.recursividadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.factorialToolStripMenuItem});
+            this.factorialToolStripMenuItem,
+            this.fibonacciToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
@@ -152,6 +154,13 @@ namespace EDDemo
             this.factorialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.factorialToolStripMenuItem.Text = "Factorial";
             this.factorialToolStripMenuItem.Click += new System.EventHandler(this.factorialToolStripMenuItem_Click);
+            // 
+            // fibonacciToolStripMenuItem
+            // 
+            this.fibonacciToolStripMenuItem.Name = "fibonacciToolStripMenuItem";
+            this.fibonacciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fibonacciToolStripMenuItem.Text = "Fibonacci";
+            this.fibonacciToolStripMenuItem.Click += new System.EventHandler(this.fibonacciToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -186,6 +195,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem listaCircularDobleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recursividadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem factorialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fibonacciToolStripMenuItem;
     }
 }
 

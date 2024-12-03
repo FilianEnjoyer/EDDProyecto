@@ -90,5 +90,12 @@ namespace EDDemo
             mFactorial.MdiParent = this;
             mFactorial.Show();
         }
+
+        private void fibonacciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFibonacci mFibonacci = new FrmFibonacci();
+            mFibonacci.MdiParent = this;
+            mFibonacci.Show();
+        }
     }
 }
