@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Recursividad;
 
 namespace EDDemo
 {
@@ -81,6 +82,13 @@ namespace EDDemo
             FrmListasCircularesDobles mListaCD = new FrmListasCircularesDobles();
             mListaCD.MdiParent = this;
             mListaCD.Show();
+        }
+
+        private void factorialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFactorial mFactorial = new FrmFactorial();
+            mFactorial.MdiParent = this;
+            mFactorial.Show();
         }
     }
 }
