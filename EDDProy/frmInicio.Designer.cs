@@ -43,6 +43,7 @@ namespace EDDemo
             this.recursividadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.factorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fibonacciToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.potenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,7 +144,8 @@ namespace EDDemo
             // 
             this.recursividadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.factorialToolStripMenuItem,
-            this.fibonacciToolStripMenuItem});
+            this.fibonacciToolStripMenuItem,
+            this.potenciaToolStripMenuItem});
             this.recursividadToolStripMenuItem.Name = "recursividadToolStripMenuItem";
             this.recursividadToolStripMenuItem.Size = new System.Drawing.Size(86, 22);
             this.recursividadToolStripMenuItem.Text = "Recursividad";
@@ -161,6 +163,13 @@ namespace EDDemo
             this.fibonacciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.fibonacciToolStripMenuItem.Text = "Fibonacci";
             this.fibonacciToolStripMenuItem.Click += new System.EventHandler(this.fibonacciToolStripMenuItem_Click);
+            // 
+            // potenciaToolStripMenuItem
+            // 
+            this.potenciaToolStripMenuItem.Name = "potenciaToolStripMenuItem";
+            this.potenciaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.potenciaToolStripMenuItem.Text = "Potencia";
+            this.potenciaToolStripMenuItem.Click += new System.EventHandler(this.potenciaToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -196,6 +205,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem recursividadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem factorialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fibonacciToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem potenciaToolStripMenuItem;
     }
 }
 

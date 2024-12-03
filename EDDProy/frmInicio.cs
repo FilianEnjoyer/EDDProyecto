@@ -97,5 +97,12 @@ namespace EDDemo
             mFibonacci.MdiParent = this;
             mFibonacci.Show();
         }
+
+        private void potenciaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPotencia mPotencia = new FrmPotencia();
+            mPotencia.MdiParent = this;
+            mPotencia.Show();
+        }
     }
 }
