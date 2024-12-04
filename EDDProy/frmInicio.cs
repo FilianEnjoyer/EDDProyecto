@@ -147,5 +147,12 @@ namespace EDDemo
             mMezclaDirecta.MdiParent = this;
             mMezclaDirecta.Show();
         }
+
+        private void mezclaNaturalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMezclaNatural mMezclaNatural = new FrmMezclaNatural();
+            mMezclaNatural.MdiParent = this;
+            mMezclaNatural.Show();
+        }
     }
 }

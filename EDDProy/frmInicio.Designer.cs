@@ -51,6 +51,7 @@ namespace EDDemo
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mezclaDirectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,7 +200,7 @@ namespace EDDemo
             // arbolesToolStripMenuItem
             // 
             this.arbolesToolStripMenuItem.Name = "arbolesToolStripMenuItem";
-            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.arbolesToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.arbolesToolStripMenuItem.Text = "Arboles";
             this.arbolesToolStripMenuItem.Click += new System.EventHandler(this.arbolesToolStripMenuItem_Click);
             // 
@@ -208,7 +209,8 @@ namespace EDDemo
             this.metodosDeOrdenamientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.burbujaToolStripMenuItem,
             this.intercalacionToolStripMenuItem,
-            this.mezclaDirectaToolStripMenuItem});
+            this.mezclaDirectaToolStripMenuItem,
+            this.mezclaNaturalToolStripMenuItem});
             this.metodosDeOrdenamientoToolStripMenuItem.Name = "metodosDeOrdenamientoToolStripMenuItem";
             this.metodosDeOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.metodosDeOrdenamientoToolStripMenuItem.Text = "Metodos de Ordenamiento";
@@ -233,6 +235,13 @@ namespace EDDemo
             this.mezclaDirectaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mezclaDirectaToolStripMenuItem.Text = "Mezcla Directa";
             this.mezclaDirectaToolStripMenuItem.Click += new System.EventHandler(this.mezclaDirectaToolStripMenuItem_Click);
+            // 
+            // mezclaNaturalToolStripMenuItem
+            // 
+            this.mezclaNaturalToolStripMenuItem.Name = "mezclaNaturalToolStripMenuItem";
+            this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mezclaNaturalToolStripMenuItem.Text = "MezclaNatural";
+            this.mezclaNaturalToolStripMenuItem.Click += new System.EventHandler(this.mezclaNaturalToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -276,6 +285,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem intercalacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mezclaDirectaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mezclaNaturalToolStripMenuItem;
     }
 }
 

@@ -202,20 +202,20 @@ namespace EDDemo.Estructuras_Lineales.Clases
         }
         public override string ToString()
         {
-            if (estaVacio())
-                return "La lista está vacía.";
-
             Nodo actual = Cabeza;
-            string resultado = "";
+            StringBuilder resultado = new StringBuilder();
 
             while (actual != null)
             {
-                resultado += actual.Dato + " -> ";
+                if (resultado.Length > 0)
+                    resultado.Append(" -> ");
+
+                resultado.Append(actual.Dato);
                 actual = actual.Sig;
             }
 
-            resultado += "null";
-            return resultado;
+            resultado.Append(" -> null");
+            return resultado.ToString();
         }
     }
 }
