@@ -133,5 +133,12 @@ namespace EDDemo
             mBurbuja.MdiParent = this;
             mBurbuja.Show();
         }
+
+        private void intercalacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIntercalacion mIntercalacion = new FrmIntercalacion();
+            mIntercalacion.MdiParent = this;
+            mIntercalacion.Show();
+        }
     }
 }

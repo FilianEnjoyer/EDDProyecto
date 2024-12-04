@@ -49,6 +49,7 @@ namespace EDDemo
             this.arbolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metodosDeOrdenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.burbujaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,7 +205,8 @@ namespace EDDemo
             // metodosDeOrdenamientoToolStripMenuItem
             // 
             this.metodosDeOrdenamientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.burbujaToolStripMenuItem});
+            this.burbujaToolStripMenuItem,
+            this.intercalacionToolStripMenuItem});
             this.metodosDeOrdenamientoToolStripMenuItem.Name = "metodosDeOrdenamientoToolStripMenuItem";
             this.metodosDeOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.metodosDeOrdenamientoToolStripMenuItem.Text = "Metodos de Ordenamiento";
@@ -215,6 +217,13 @@ namespace EDDemo
             this.burbujaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.burbujaToolStripMenuItem.Text = "Burbuja";
             this.burbujaToolStripMenuItem.Click += new System.EventHandler(this.burbujaToolStripMenuItem_Click);
+            // 
+            // intercalacionToolStripMenuItem
+            // 
+            this.intercalacionToolStripMenuItem.Name = "intercalacionToolStripMenuItem";
+            this.intercalacionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.intercalacionToolStripMenuItem.Text = "Intercalacion";
+            this.intercalacionToolStripMenuItem.Click += new System.EventHandler(this.intercalacionToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -256,6 +265,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem busquedaBinariaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem metodosDeOrdenamientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem burbujaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem intercalacionToolStripMenuItem;
     }
 }
 
