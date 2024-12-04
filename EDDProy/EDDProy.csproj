@@ -142,6 +142,7 @@
     <Compile Include="Graphviz.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\Intercalacion.cs" />
+    <Compile Include="Metodos de Ordenamiento\Clases\MezclaDirecta.cs" />
     <Compile Include="Metodos de Ordenamiento\FrmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +154,12 @@
     </Compile>
     <Compile Include="Metodos de Ordenamiento\FrmIntercalacion.Designer.cs">
       <DependentUpon>FrmIntercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmMezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmMezclaDirecta.Designer.cs">
+      <DependentUpon>FrmMezclaDirecta.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -230,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Ordenamiento\FrmIntercalacion.resx">
       <DependentUpon>FrmIntercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenamiento\FrmMezclaDirecta.resx">
+      <DependentUpon>FrmMezclaDirecta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

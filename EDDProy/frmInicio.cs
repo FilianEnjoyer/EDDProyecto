@@ -140,5 +140,12 @@ namespace EDDemo
             mIntercalacion.MdiParent = this;
             mIntercalacion.Show();
         }
+
+        private void mezclaDirectaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMezclaDirecta mMezclaDirecta = new FrmMezclaDirecta();
+            mMezclaDirecta.MdiParent = this;
+            mMezclaDirecta.Show();
+        }
     }
 }
