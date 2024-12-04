@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Metodos_de_Ordenamiento;
 using EDDemo.Recursividad;
 
 namespace EDDemo
@@ -124,6 +125,13 @@ namespace EDDemo
             FrmBusquedaBinaria mBusquedaBinaira = new FrmBusquedaBinaria();
             mBusquedaBinaira.MdiParent = this;
             mBusquedaBinaira.Show();
+        }
+
+        private void burbujaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBurbuja mBurbuja = new FrmBurbuja();
+            mBurbuja.MdiParent = this;
+            mBurbuja.Show();
         }
     }
 }

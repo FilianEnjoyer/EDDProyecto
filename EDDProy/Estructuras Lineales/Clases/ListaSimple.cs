@@ -200,5 +200,22 @@ namespace EDDemo.Estructuras_Lineales.Clases
             Cabeza = null;
             MessageBox.Show("La lista ha sido vaciada");
         }
+        public override string ToString()
+        {
+            if (estaVacio())
+                return "La lista está vacía.";
+
+            Nodo actual = Cabeza;
+            string resultado = "";
+
+            while (actual != null)
+            {
+                resultado += actual.Dato + " -> ";
+                actual = actual.Sig;
+            }
+
+            resultado += "null";
+            return resultado;
+        }
     }
 }
