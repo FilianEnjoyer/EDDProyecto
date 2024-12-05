@@ -146,6 +146,7 @@
     <Compile Include="Metodos de Ordenamiento\Clases\MezclaNatural.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\QuickSort.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\Radix.cs" />
+    <Compile Include="Metodos de Ordenamiento\Clases\ShellSort.cs" />
     <Compile Include="Metodos de Ordenamiento\FrmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +182,12 @@
     </Compile>
     <Compile Include="Metodos de Ordenamiento\FrmRadix.Designer.cs">
       <DependentUpon>FrmRadix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmShellSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmShellSort.Designer.cs">
+      <DependentUpon>FrmShellSort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -270,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Ordenamiento\FrmRadix.resx">
       <DependentUpon>FrmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenamiento\FrmShellSort.resx">
+      <DependentUpon>FrmShellSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

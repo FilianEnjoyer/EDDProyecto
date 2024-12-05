@@ -54,6 +54,7 @@ namespace EDDemo
             this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.radixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shellSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,7 +215,8 @@ namespace EDDemo
             this.mezclaDirectaToolStripMenuItem,
             this.mezclaNaturalToolStripMenuItem,
             this.quickSortToolStripMenuItem,
-            this.radixToolStripMenuItem});
+            this.radixToolStripMenuItem,
+            this.shellSortToolStripMenuItem});
             this.metodosDeOrdenamientoToolStripMenuItem.Name = "metodosDeOrdenamientoToolStripMenuItem";
             this.metodosDeOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.metodosDeOrdenamientoToolStripMenuItem.Text = "Metodos de Ordenamiento";
@@ -261,6 +263,13 @@ namespace EDDemo
             this.radixToolStripMenuItem.Text = "Radix";
             this.radixToolStripMenuItem.Click += new System.EventHandler(this.radixToolStripMenuItem_Click);
             // 
+            // shellSortToolStripMenuItem
+            // 
+            this.shellSortToolStripMenuItem.Name = "shellSortToolStripMenuItem";
+            this.shellSortToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shellSortToolStripMenuItem.Text = "ShellSort";
+            this.shellSortToolStripMenuItem.Click += new System.EventHandler(this.shellSortToolStripMenuItem_Click);
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,6 +315,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem mezclaNaturalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem radixToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shellSortToolStripMenuItem;
     }
 }
 
