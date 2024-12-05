@@ -144,6 +144,7 @@
     <Compile Include="Metodos de Ordenamiento\Clases\Intercalacion.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\MezclaDirecta.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\MezclaNatural.cs" />
+    <Compile Include="Metodos de Ordenamiento\Clases\QuickSort.cs" />
     <Compile Include="Metodos de Ordenamiento\FrmBurbuja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +168,12 @@
     </Compile>
     <Compile Include="Metodos de Ordenamiento\FrmMezclaNatural.Designer.cs">
       <DependentUpon>FrmMezclaNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmQuickSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de Ordenamiento\FrmQuickSort.Designer.cs">
+      <DependentUpon>FrmQuickSort.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -250,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Ordenamiento\FrmMezclaNatural.resx">
       <DependentUpon>FrmMezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de Ordenamiento\FrmQuickSort.resx">
+      <DependentUpon>FrmQuickSort.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

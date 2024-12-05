@@ -154,5 +154,12 @@ namespace EDDemo
             mMezclaNatural.MdiParent = this;
             mMezclaNatural.Show();
         }
+
+        private void quickSortToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmQuickSort mQuickSort = new FrmQuickSort();
+            mQuickSort.MdiParent = this;
+            mQuickSort.Show();
+        }
     }
 }

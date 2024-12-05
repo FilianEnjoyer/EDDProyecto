@@ -52,6 +52,7 @@ namespace EDDemo
             this.intercalacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mezclaDirectaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mezclaNaturalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quickSortToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -210,7 +211,8 @@ namespace EDDemo
             this.burbujaToolStripMenuItem,
             this.intercalacionToolStripMenuItem,
             this.mezclaDirectaToolStripMenuItem,
-            this.mezclaNaturalToolStripMenuItem});
+            this.mezclaNaturalToolStripMenuItem,
+            this.quickSortToolStripMenuItem});
             this.metodosDeOrdenamientoToolStripMenuItem.Name = "metodosDeOrdenamientoToolStripMenuItem";
             this.metodosDeOrdenamientoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.metodosDeOrdenamientoToolStripMenuItem.Text = "Metodos de Ordenamiento";
@@ -242,6 +244,13 @@ namespace EDDemo
             this.mezclaNaturalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mezclaNaturalToolStripMenuItem.Text = "MezclaNatural";
             this.mezclaNaturalToolStripMenuItem.Click += new System.EventHandler(this.mezclaNaturalToolStripMenuItem_Click);
+            // 
+            // quickSortToolStripMenuItem
+            // 
+            this.quickSortToolStripMenuItem.Name = "quickSortToolStripMenuItem";
+            this.quickSortToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quickSortToolStripMenuItem.Text = "QuickSort";
+            this.quickSortToolStripMenuItem.Click += new System.EventHandler(this.quickSortToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
@@ -286,6 +295,7 @@ namespace EDDemo
         private System.Windows.Forms.ToolStripMenuItem intercalacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mezclaDirectaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mezclaNaturalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quickSortToolStripMenuItem;
     }
 }
 

@@ -189,16 +189,19 @@ namespace EDDemo.Estructuras_Lineales.Clases
                 MessageBox.Show("La lista ya está vacía");
                 return;
             }
+
             Nodo actual = Cabeza;
-            while (!estaVacio())
+
+            // Recorremos la lista y eliminamos nodo por nodo
+            while (actual != null)
             {
-                Nodo sig = actual.Sig;
-                actual.Sig = null;
-                actual.Dato = null;
-                actual = sig;
+                Nodo sig = actual.Sig; // Guardamos la referencia al siguiente nodo
+                actual.Sig = null;     // Desconectamos el nodo actual del siguiente
+                actual = sig;          // Pasamos al siguiente nodo
             }
+
+            // Finalmente, ponemos la cabeza en null
             Cabeza = null;
-            MessageBox.Show("La lista ha sido vaciada");
         }
         public override string ToString()
         {
