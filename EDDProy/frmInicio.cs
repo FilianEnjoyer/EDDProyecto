@@ -161,5 +161,12 @@ namespace EDDemo
             mQuickSort.MdiParent = this;
             mQuickSort.Show();
         }
+
+        private void radixToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRadix mRadix = new FrmRadix();
+            mRadix.MdiParent = this;
+            mRadix.Show();
+        }
     }
 }
