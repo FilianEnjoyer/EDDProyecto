@@ -140,6 +140,13 @@
       <DependentUpon>frmInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Graphviz.cs" />
+    <Compile Include="Metodos de busqueda\Clases\Hash.cs" />
+    <Compile Include="Metodos de busqueda\FrmHash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\FrmHash.Designer.cs">
+      <DependentUpon>FrmHash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Metodos de Ordenamiento\Clases\Burbuja.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\Intercalacion.cs" />
     <Compile Include="Metodos de Ordenamiento\Clases\MezclaDirecta.cs" />
@@ -259,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmInicio.resx">
       <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\FrmHash.resx">
+      <DependentUpon>FrmHash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Metodos de Ordenamiento\FrmBurbuja.resx">
       <DependentUpon>FrmBurbuja.cs</DependentUpon>

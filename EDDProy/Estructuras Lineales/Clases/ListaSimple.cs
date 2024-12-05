@@ -203,6 +203,26 @@ namespace EDDemo.Estructuras_Lineales.Clases
             // Finalmente, ponemos la cabeza en null
             Cabeza = null;
         }
+        public void VaciarHash()
+        {
+            if (estaVacio())
+            {
+                return; // Si ya está vacía, salir del método sin mostrar mensaje
+            }
+
+            Nodo actual = Cabeza;
+
+            // Recorremos la lista y eliminamos nodo por nodo
+            while (actual != null)
+            {
+                Nodo sig = actual.Sig; // Guardamos la referencia al siguiente nodo
+                actual.Sig = null;     // Desconectamos el nodo actual del siguiente
+                actual = sig;          // Pasamos al siguiente nodo
+            }
+
+            // Finalmente, ponemos la cabeza en null
+            Cabeza = null;
+        }
         public override string ToString()
         {
             Nodo actual = Cabeza;

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using EDDemo.Estructuras_Lineales;
 using EDDemo.Estructuras_No_Lineales;
+using EDDemo.Metodos_de_busqueda;
 using EDDemo.Metodos_de_Ordenamiento;
 using EDDemo.Recursividad;
 
@@ -174,6 +175,20 @@ namespace EDDemo
             FrmShellSort mShellSort = new FrmShellSort();
             mShellSort.MdiParent = this;
             mShellSort.Show();
+        }
+
+        private void hashToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmHash mHash = new FrmHash();
+            mHash.MdiParent = this;
+            mHash.Show();
+        }
+
+        private void busquedaBinariaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaBinaria mBusquedaBinaira = new FrmBusquedaBinaria();
+            mBusquedaBinaira.MdiParent = this;
+            mBusquedaBinaira.Show();
         }
     }
 }
