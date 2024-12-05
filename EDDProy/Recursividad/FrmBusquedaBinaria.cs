@@ -77,5 +77,10 @@ namespace EDDemo.Recursividad
             // Mostrar el tiempo en ticks en el label
             LblTiempo.Text = $"Tiempo de búsqueda: {stopwatch.ElapsedTicks} ticks";
         }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

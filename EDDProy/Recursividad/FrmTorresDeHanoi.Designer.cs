@@ -108,16 +108,17 @@
             // ResultadoHanoiTxtBox
             // 
             this.ResultadoHanoiTxtBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultadoHanoiTxtBox.Location = new System.Drawing.Point(56, 385);
+            this.ResultadoHanoiTxtBox.Location = new System.Drawing.Point(56, 363);
+            this.ResultadoHanoiTxtBox.Multiline = true;
             this.ResultadoHanoiTxtBox.Name = "ResultadoHanoiTxtBox";
-            this.ResultadoHanoiTxtBox.Size = new System.Drawing.Size(706, 25);
+            this.ResultadoHanoiTxtBox.Size = new System.Drawing.Size(706, 75);
             this.ResultadoHanoiTxtBox.TabIndex = 32;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(363, 265);
+            this.label6.Location = new System.Drawing.Point(360, 250);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 21);
             this.label6.TabIndex = 31;
@@ -127,7 +128,7 @@
             this.btEjecutarHanoi.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btEjecutarHanoi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btEjecutarHanoi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEjecutarHanoi.Location = new System.Drawing.Point(368, 338);
+            this.btEjecutarHanoi.Location = new System.Drawing.Point(365, 323);
             this.btEjecutarHanoi.Name = "btEjecutarHanoi";
             this.btEjecutarHanoi.Size = new System.Drawing.Size(75, 34);
             this.btEjecutarHanoi.TabIndex = 30;
@@ -139,7 +140,7 @@
             // 
             this.labelPedirDiscos.AutoSize = true;
             this.labelPedirDiscos.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPedirDiscos.Location = new System.Drawing.Point(303, 277);
+            this.labelPedirDiscos.Location = new System.Drawing.Point(300, 262);
             this.labelPedirDiscos.Name = "labelPedirDiscos";
             this.labelPedirDiscos.Size = new System.Drawing.Size(203, 21);
             this.labelPedirDiscos.TabIndex = 29;
@@ -147,7 +148,7 @@
             // 
             // LeerDiscosTxtBox
             // 
-            this.LeerDiscosTxtBox.Location = new System.Drawing.Point(337, 312);
+            this.LeerDiscosTxtBox.Location = new System.Drawing.Point(334, 297);
             this.LeerDiscosTxtBox.Name = "LeerDiscosTxtBox";
             this.LeerDiscosTxtBox.Size = new System.Drawing.Size(136, 20);
             this.LeerDiscosTxtBox.TabIndex = 28;

@@ -73,10 +73,11 @@
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(24, 163);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(596, 21);
+            this.label14.Size = new System.Drawing.Size(611, 21);
             this.label14.TabIndex = 42;
-            this.label14.Text = "Llenará el arreglo con números aleatorios del 1 al 20, y luego ordenará el arregl" +
-    "o.";
+            this.label14.Text = "Llenará el arreglo con números aleatorios del 1 al 1000, y luego ordenará el arre" +
+    "glo.";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label12
             // 
@@ -115,9 +116,9 @@
             this.PedirNumeroBusquedaBinaria.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PedirNumeroBusquedaBinaria.Location = new System.Drawing.Point(443, 294);
             this.PedirNumeroBusquedaBinaria.Name = "PedirNumeroBusquedaBinaria";
-            this.PedirNumeroBusquedaBinaria.Size = new System.Drawing.Size(286, 21);
+            this.PedirNumeroBusquedaBinaria.Size = new System.Drawing.Size(301, 21);
             this.PedirNumeroBusquedaBinaria.TabIndex = 38;
-            this.PedirNumeroBusquedaBinaria.Text = "Que numero del 1 al 20 quieres buscar";
+            this.PedirNumeroBusquedaBinaria.Text = "Que numero del 1 al 1000 quieres buscar";
             // 
             // PedirNumeroBusquedaTxtBox
             // 

@@ -15,7 +15,7 @@ namespace EDDemo.Recursividad.Clases
 
             for (int i = 0; i < tamaño; i++)
             {
-                arreglo[i] = rnd.Next(1, 21); // Genera números aleatorios entre 1 y 20     
+                arreglo[i] = rnd.Next(1, 1001); // Genera números aleatorios entre 1 y 1001     
             }
 
             return arreglo;
