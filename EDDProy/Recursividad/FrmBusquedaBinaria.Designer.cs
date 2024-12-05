@@ -43,6 +43,7 @@
             this.EscribirNumElementosBusquedaTxtBox = new System.Windows.Forms.TextBox();
             this.DescripcionBusquedaBinaria = new System.Windows.Forms.Label();
             this.TituloBusquedaBinaria = new System.Windows.Forms.Label();
+            this.LblTiempo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label16
@@ -194,11 +195,21 @@
             this.TituloBusquedaBinaria.TabIndex = 30;
             this.TituloBusquedaBinaria.Text = "Busqueda Binaria";
             // 
+            // LblTiempo
+            // 
+            this.LblTiempo.AutoSize = true;
+            this.LblTiempo.Location = new System.Drawing.Point(181, 425);
+            this.LblTiempo.Name = "LblTiempo";
+            this.LblTiempo.Size = new System.Drawing.Size(42, 13);
+            this.LblTiempo.TabIndex = 45;
+            this.LblTiempo.Text = "Tiempo";
+            // 
             // FrmBusquedaBinaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblTiempo);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -238,5 +249,6 @@
         private System.Windows.Forms.TextBox EscribirNumElementosBusquedaTxtBox;
         private System.Windows.Forms.Label DescripcionBusquedaBinaria;
         private System.Windows.Forms.Label TituloBusquedaBinaria;
+        private System.Windows.Forms.Label LblTiempo;
     }
 }

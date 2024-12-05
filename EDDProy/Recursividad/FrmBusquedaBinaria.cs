@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,6 +42,9 @@ namespace EDDemo.Recursividad
 
         private void btBuscarEnArreglo_Click(object sender, EventArgs e)
         {
+            // Iniciar el temporizador
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             if (arreglo == null || arreglo.Length == 0) // Validar que el arreglo esté inicializado
             {
                 MessageBox.Show("Por favor, genera un arreglo antes de realizar la búsqueda.");
@@ -67,6 +71,11 @@ namespace EDDemo.Recursividad
             {
                 MessageBox.Show("Por favor, ingresa un número entero válido.");
             }
+            // Detener el temporizador
+            stopwatch.Stop();
+
+            // Mostrar el tiempo en ticks en el label
+            LblTiempo.Text = $"Tiempo de búsqueda: {stopwatch.ElapsedTicks} ticks";
         }
     }
 }
